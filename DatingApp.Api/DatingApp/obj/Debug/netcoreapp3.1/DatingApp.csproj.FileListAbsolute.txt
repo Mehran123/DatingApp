@@ -81,3 +81,4 @@ C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\run
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\DatingApp.csproj.CopyComplete
+C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
