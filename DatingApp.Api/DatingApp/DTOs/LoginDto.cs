@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DatingApp.DTOs
+namespace Api.DTOs
 {
     public class LoginDto
     {

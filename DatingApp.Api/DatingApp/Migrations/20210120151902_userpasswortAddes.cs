@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace DatingApp.Migrations
+namespace Api.Migrations
 {
     public partial class userpasswortAddes : Migration
     {

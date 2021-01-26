@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
-namespace DatingApp.Extensions
+namespace Api.Extensions
 {
     public static class IdentityServiceExtensions
     {

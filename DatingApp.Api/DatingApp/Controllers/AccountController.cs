@@ -6,13 +6,13 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using DatingApp.Data;
-using DatingApp.DTOs;
-using DatingApp.Entities;
-using DatingApp.Interfaces;
+using Api.Data;
+using Api.DTOs;
+using Api.Entities;
+using Api.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace DatingApp.Controllers
+namespace Api.Controllers
 {
  
     public class AccountController : BaseApiController

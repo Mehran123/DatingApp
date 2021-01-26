@@ -5,13 +5,13 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using DatingApp.Entities;
-using DatingApp.Interfaces;
+using Api.Entities;
+using Api.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
-namespace DatingApp.Services
+namespace Api.Services
 {
     public class TokenService : ITokenService
     {

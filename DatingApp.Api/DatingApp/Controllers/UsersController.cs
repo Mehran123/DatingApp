@@ -4,12 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using DatingApp.Data;
-using DatingApp.Entities;
+using Api.Data;
+using Api.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
-namespace DatingApp.Controllers
+namespace Api.Controllers
 {
 
     public class UsersController : BaseApiController

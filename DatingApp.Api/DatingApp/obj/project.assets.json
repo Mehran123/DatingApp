@@ -5807,9 +5807,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\Angular\\DatingApp\\DatingApp.Api\\DatingApp\\DatingApp.csproj",
-      "projectName": "DatingApp",
-      "projectPath": "C:\\Project\\Angular\\DatingApp\\DatingApp.Api\\DatingApp\\DatingApp.csproj",
+      "projectUniqueName": "C:\\Project\\Angular\\DatingApp\\DatingApp.Api\\DatingApp\\Api.csproj",
+      "projectName": "Api",
+      "projectPath": "C:\\Project\\Angular\\DatingApp\\DatingApp.Api\\DatingApp\\Api.csproj",
       "packagesPath": "C:\\Users\\jaafa\\.nuget\\packages\\",
       "outputPath": "C:\\Project\\Angular\\DatingApp\\DatingApp.Api\\DatingApp\\obj\\",
       "projectStyle": "PackageReference",
