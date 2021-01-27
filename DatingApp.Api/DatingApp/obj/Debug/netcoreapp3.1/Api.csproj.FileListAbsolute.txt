@@ -61,3 +61,4 @@ C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api.dll
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api.pdb
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
