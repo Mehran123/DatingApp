@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Api.Data;
+using Api.Helper;
 using Api.Interfaces;
 using Api.Services;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +21,8 @@ namespace Api.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             var connection = config["DbConnectionString"];
             services.AddDbContext<DataContext>(
                 options => options.UseSqlServer(connection));
