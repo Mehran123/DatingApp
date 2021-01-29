@@ -58,6 +58,7 @@ namespace Api.Data
                 .ToListAsync();
         }
 
+        // Da die Mapper verbindet, Include ist nicht notwendig
         public async Task<MemberDto> GetMemberAsync(string username)
         {
             return await _context.Users
