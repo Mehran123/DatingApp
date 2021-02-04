@@ -4,7 +4,8 @@
      <button (click)="get401Error()" class="btn btn-outline-primary mr-3">Test 401 error</button>
      <button (click)="get404Error()" class="btn btn-outline-primary mr-3">Test 404 error</button>
      <button (click)="get400ValidationError()" class="btn btn-outline-primary mr-3">Test 400 Validation error</button>
-    <div class="row mt-5" *ngIf="validationErrors.length > 0">
+     <a class="dropdown-item" routerLink='/member/edit'>Edit Profile</a>
+     <div class="row mt-5" *ngIf="validationErrors.length > 0">
         <ul class="text-danger">
             <li *ngFor="let error of validationErrors">{{error}}</li>
         </ul>
