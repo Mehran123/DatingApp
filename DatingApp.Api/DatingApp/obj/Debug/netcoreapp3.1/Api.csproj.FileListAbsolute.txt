@@ -65,3 +65,4 @@ C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\obj\Debug\netcoreapp3.1\Api.csprojAssemblyReference.cache
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Project\Angular\DatingApp\DatingApp.Api\DatingApp\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
