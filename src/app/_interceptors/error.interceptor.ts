@@ -32,8 +32,12 @@ export class ErrorInterceptor implements HttpInterceptor {
                 // add tsconfig with es2019 for flat
                 throw modalStateErrors.flat();
               }
-              else{
+              else if (typeof(error.console.error === 'object'))
+              {
                 this.toastr.error(error.statusText, error.status)
+              }
+              else {
+                this.toastr.error(error.error, error.status);
               }
               break;
 
