@@ -11,6 +11,7 @@ import {TestErrosComponent} from './errors/test-erros/test-errors.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { ServerErrorComponent } from './errors/server-error/server-error.component';
 import { PreventUnsavedChangesGuard } from './_gards/prevent-unsaved-changes.guard';
+import { MemeberDetailedResolver } from './_resolvers/member-detailed.resolver';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
     canActivate:[AutGuard],
     children:[
       {path:'members', component: MemeberListComponent},
-      {path:'members/:username', component: MemeberDetailsComponent},
+      {path:'members/:username', component: MemeberDetailsComponent, resolve:{member: MemeberDetailedResolver}},
       {path:'member/edit', component: MemberEditComponent, canDeactivate: [PreventUnsavedChangesGuard]},
       {path:'lists', component: ListsComponent},
       {path:'messages', component: MessagesComponent},
