@@ -17,11 +17,13 @@ export class MessagesComponent implements OnInit {
   loading = false;
   constructor(private messageService: MessageService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loadMessages();
+  }
 
   loadMessages() {
     this.messageService
-      .getMessage(this.pageNumber, this.pageSize, this.container)
+      .getMessages(this.pageNumber, this.pageSize, this.container)
       .subscribe((response) => {
         this.messages = response.result;
         this.pagination = response.pagination;

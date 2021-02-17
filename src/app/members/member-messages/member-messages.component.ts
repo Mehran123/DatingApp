@@ -1,7 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Message } from 'src/app/_models/message';
-import { MemberService } from 'src/app/_services/member.service';
 import { MessageService } from 'src/app/_services/message.service';
 
 @Component({
@@ -13,15 +12,31 @@ export class MemberMessagesComponent implements OnInit {
   @ViewChild('messageForm') messageForm: NgForm;
   @Input() messages: Message[];
   @Input() username: string;
-  messageContent: string;
-  constructor(private messageService: MessageService) {}
+   messageContent: string;
+  loading = false;
+  
+   // messagesJust:  Message[]=[{
+  //   content: "hallo you",
+  //   dataRead: null,
+  //   id: 26,
+  //   messageSent: new Date(),
+  //   recipientId: 10,
+  //   recipientPhotoUrl: "https://randomuser.me/api/portraits/men/22.jpg",
+  //   recipientUsername: "crawford",
+  //   senderId: 7,
+  //   senderPhotoUrl: "https://randomuser.me/api/portraits/men/96.jpg",
+  //   senderUsername: "dixon",
+  // }];
+  
+  constructor(public messageService: MessageService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   sendMessage() {
-    this.messageService.sendMessage(this.username, this.messageContent).subscribe(message=>{
-      this.messages.push(message);
+    this.loading = true;
+    this.messageService.sendMessage(this.username, this.messageContent).then(() => {
       this.messageForm.reset();
-    });
+    }).finally(() => this.loading = false);
   }
+
 }
