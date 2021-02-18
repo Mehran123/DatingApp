@@ -3,16 +3,20 @@ import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } f
 import { Observable } from 'rxjs';
 import { MemberCardComponent } from '../members/member-card/member-card.component';
 import { MemberEditComponent } from '../members/member-edit/member-edit.component';
+import { ConfirmService } from '../_services/confirm.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PreventUnsavedChangesGuard implements CanDeactivate<unknown> {
+
+  constructor(private confirm: ConfirmService) {}
   canDeactivate(
-    component: MemberEditComponent): boolean {
+    component: MemberEditComponent): Observable<boolean> | boolean{
       if(component.editForm.dirty){
-        return confirm('Are you sure you want to continue? Any unsaved changes will be lost');
+        return this.confirm.confirm()
       }
+      
     return true;
   }
   
